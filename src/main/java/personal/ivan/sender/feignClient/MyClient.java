@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import personal.ivan.sender.entity.MyTableEntity;
 
-@FeignClient(name="my-sender",url="http://localhost:8675/myservice/get")
+@FeignClient(name="my-sender",url="http://localhost:8675")
 public interface MyClient {
-    @RequestMapping(method = RequestMethod.GET, value = "/47")
+    @RequestMapping(method = RequestMethod.GET, value = "/myservice/get/47")
     MyTableEntity send();
 }

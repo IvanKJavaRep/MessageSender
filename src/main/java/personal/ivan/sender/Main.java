@@ -8,8 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@EnableFeignClients
-@ComponentScan({"personal.ivan.sender.feignClient", "personal.ivan.sender"})
+@EnableFeignClients(basePackages = {"personal.ivan.sender.feignClient"})
+@ComponentScan( "personal.ivan.sender")
 public class Main implements CommandLineRunner {
     @Autowired
     private Config config;
