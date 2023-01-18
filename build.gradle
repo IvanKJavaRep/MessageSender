@@ -25,6 +25,9 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
     implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+    // https://mavenlibs.com/maven/dependency/org.testcontainers/nginx
+    implementation 'org.testcontainers:nginx:1.17.6'
+
 
 }
 dependencyManagement {
