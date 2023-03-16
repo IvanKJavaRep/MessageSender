@@ -16,6 +16,7 @@ public class NginxController {
     @GetMapping()
     @ResponseBody
     public String get() {
+        System.out.println("server on port 4028 is listening");
         return "server on port 4028 is listening";
     }
 }

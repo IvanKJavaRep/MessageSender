@@ -1,8 +1,17 @@
 spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
     add-mappings: false
+  datasource:
+    test:
+      url: jdbc:postgresql://localhost:5432/testbase
+      username: ivan
+      password: ivan
+      driverClassName: org.postgresql.Driver
 
 server:
   port: 4028
